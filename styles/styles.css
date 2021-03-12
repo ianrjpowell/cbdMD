@@ -1,1 +1,358 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
+h2 {
+  color: #2d2d2d;
+}
+
+p {
+  color: #707070;
+}
+
+.banner {
+  background: #95a4bc;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 11px;
+  margin-left: 5px;
+}
+
+.header {
+  padding: 20px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 0 36px;
+}
+
+.container--offset {
+  padding: 0 21px 0 36px;
+}
+
+.container--calm-canine {
+  padding-left: 114px;
+  padding-right: 36px;
+}
+
+.section--hero {
+  padding: 40px 0 50px;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 5%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../images/doggo-mobile@2x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+
+.section--hero .section__title {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 42px;
+  margin-bottom: 11px;
+}
+
+.section--hero .section__text {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 19px;
+  padding-right: 141px;
+  color: #fff;
+}
+
+.section--tips {
+  padding: 47px 0 53px;
+  background-color: #f0f2f4;
+}
+
+.section--tips .section__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.tip-card {
+  padding: 18px;
+  margin-bottom: 36px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.tip-image {
+  margin-left: 18px;
+}
+
+.tip-image--1 {
+  width: 130px;
+}
+
+.tip-image--2 {
+  width: 150px;
+}
+
+.tip-image--3 {
+  width: 176px;
+}
+
+.tip-card .tip-card__title {
+  color: #2d2d2d;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.tip-card .tip-card__text {
+  color: #707070;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.bonus-tip {
+  text-align: center;
+  padding: 27px 0 16px;
+  border-top: 1px solid #ac1b20;
+  border-bottom: 1px solid #ac1b20;
+  position: relative;
+}
+
+.bonus-tip .bonus-tip__image {
+  margin-bottom: 14px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 20px 0;
+}
+
+.bonus-tip .bonus-tip__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.section--calm-canine {
+  padding: 0 0 40px;
+  background-color: #f0f2f4;
+}
+
+.section--calm-canine .section__background {
+  padding: 35px 0 69px;
+  background: url("../images/guy-with-dog@2x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 33px;
+}
+
+.section--calm-canine .section__title {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.section--calm-canine .section__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.value-props {
+  width: 50%;
+  margin-bottom: 21px;
+}
+
+.value-props .value-props__item {
+  font-size: 12px;
+  color: #2d2d2d;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 6px;
+}
+
+.container--bundle {
+  position: relative;
+}
+
+.bundle-image-text {
+  position: absolute;
+  top: -138px;
+  right: -93px;
+}
+
+.bundle-image-text .legal {
+  font-size: 8px;
+  font-weight: 700;
+  margin-left: 33px;
+}
+
+.section--calm-canine .section__choice-text {
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #96a4bb;
+  margin-bottom: 21px;
+}
+
+.section--reviews {
+  padding: 62px 0 57px;
+  text-align: center;
+}
+
+.section--reviews .section__title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 44px;
+}
+
+.review-card {
+}
+
+.review-card .review-card__quote {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.review-card .review-card__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #707070;
+}
+
+.footer {
+  background-color: #1f2f64;
+  padding: 45px 0;
+}
+
+.footer .footer__list {
+  width: 45%;
+}
+
+.footer .footer__list:nth-child(-n + 2) {
+  margin-bottom: 30px;
+}
+
+.footer .footer__list li {
+  margin-top: 8px;
+}
+
+.footer .footer__list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer .footer__list-title {
+  color: #fff;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 800;
+}
+
+.footer .footer__lists-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #fffcfc;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.social-links li:first-child {
+  display: block;
+}
+
+.social-links li:nth-child(2) {
+  margin: 0;
+}
+
+.footer .footer__legal {
+  color: #fff;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 42px;
+}
+
+.footer .credit-cards {
+  margin-top: 42px;
+}
+
+.legal-box {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.button {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #00b2e3;
+  padding: 8px 25px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button-with-text + .button-with-text {
+  margin-top: 21px;
+}
+
+.button-with-text .button {
+  display: block;
+  width: 216px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-with-text span {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 275px;
+  }
+  .section--hero {
+    padding: 155px 0;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 5%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url("../images/doggo-desktop@2x.png");
+  }
+}
