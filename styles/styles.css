@@ -518,6 +518,14 @@ p {
 
   .section--calm-canine {
     padding-bottom: 0;
+    position: relative;
+  }
+
+  .section--calm-canine .section__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 4%;
   }
 
   .section--calm-canine .section__background {
@@ -525,7 +533,7 @@ p {
     background-image: url("../images/guy-with-dog-desktop.png");
     background-color: #f0f2f4;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: left;
     margin: 0;
   }
@@ -534,6 +542,7 @@ p {
     font-size: 38px;
     line-height: 44px;
     margin-bottom: 20px;
+    max-width: 444px;
   }
 
   .section--calm-canine .section__text {
