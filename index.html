@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cbdMD</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
@@ -32,14 +38,40 @@
   </head>
   <body>
     <div class="banner">
-      <img src="/images/fast-truck@2x.png" alt="truck icon" />
-      <p>Free 2-3 Day Shipping On Orders Over $79.95</p>
+      <div class="banner__callout">
+        <img src="/images/fast-truck@2x.png" alt="truck icon" />
+        <p>Free 2-3 Day Shipping On Orders Over $79.95</p>
+      </div>
+      <div class="banner__callout hide-for-small-only">
+        <img src="/images/check-shield.png" alt="Shield Icon">
+        <p>30-DAY MONEY-BACK GUARANTEE</p>
+      </div>
+      <div class="banner__nav hide-for-small-only">
+        <div class="banner__callout">
+          <img src="/images/user.png" alt="User Icon">
+          <p>Create Account</p>
+        </div>
+        <p>Sign Out</p>
+        <p>Wholesale Login</p>
+      </div>
     </div>
     <header class="header">
-      <img src="/images/burger@2x.png" alt="menu button" />
+      <img class="show-for-small-only" src="/images/burger@2x.png" alt="menu button" />
       <img src="/images/logo@2x.png" alt="cbdMD logo" />
-      <img src="/images/mag-glass@2x.png" alt="search button" />
-      <img src="/images/cart@2x.png" alt="cart button" />
+      <a href="#" class="button hide-for-small-only">Shop CBD Now</a>
+      <nav class="nav hide-for-small-only">
+        <ul class="nav__list">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pets</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <div class="header__icons">
+        <img src="/images/mag-glass@2x.png" alt="search button" />
+        <img src="/images/cart@2x.png" alt="cart button" />
+      </div>
     </header>
     <main>
       <section class="section section--hero">
@@ -56,61 +88,71 @@
         </div>
       </section>
       <section class="section section--tips">
-        <div class="container">
+        <div class="container container--tips">
           <h2 class="section__title">
             Be prepared for the open road (or sky) with our top three travel
             tips for pets!
           </h2>
-          <img
-            class="tip-image tip-image--1"
-            src="/images/tip-one@2x.png"
-            alt="tip one"
-          />
-          <div class="tip-card">
-            <h3 class="tip-card__title">Current ID</h3>
-            <p class="tip-card__text">
-              Even with current ID tags, make sure your pets are microchipped
-              and your contact info is up to date, which will increase their
-              chances of being returned safely.
-            </p>
+          <div class="tips-container">
+            <div>
+              <img
+                class="tip-image tip-image--1"
+                src="/images/tip-one@2x.png"
+                alt="tip one"
+              />
+              <div class="tip-card">
+                <h3 class="tip-card__title">Current ID</h3>
+                <p class="tip-card__text">
+                  Even with current ID tags, make sure your pets are
+                  microchipped and your contact info is up to date, which will
+                  increase their chances of being returned safely.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                class="tip-image tip-image--2"
+                src="/images/tip-two@2x.png"
+                alt="tip two"
+              />
+              <div class="tip-card">
+                <h3 class="tip-card__title">Do your homework</h3>
+                <p class="tip-card__text">
+                  If you’re traveling by plane or train, every carrier has
+                  different rules and regulations, so it’s best to talk to a
+                  live person to verify the safest way to bring your pet.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                class="tip-image tip-image--3"
+                src="/images/tip-three@2x.png"
+                alt="tip three"
+              />
+              <div class="tip-card">
+                <h3 class="tip-card__title">Bring everything they need</h3>
+                <p class="tip-card__text">
+                  Pets may find traveling stressful, so bring their familiar
+                  food, medication, treats, carriers, leashes, bedding, and toys
+                  to make them feel more safe and comfortable.
+                </p>
+              </div>
+            </div>
           </div>
-          <img
-            class="tip-image tip-image--2"
-            src="/images/tip-two@2x.png"
-            alt="tip two"
-          />
-          <div class="tip-card">
-            <h3 class="tip-card__title">Do your homework</h3>
-            <p class="tip-card__text">
-              If you’re traveling by plane or train, every carrier has different
-              rules and regulations, so it’s best to talk to a live person to
-              verify the safest way to bring your pet.
-            </p>
-          </div>
-          <img
-            class="tip-image tip-image--3"
-            src="/images/tip-three@2x.png"
-            alt="tip three"
-          />
-          <div class="tip-card">
-            <h3 class="tip-card__title">Bring everything they need</h3>
-            <p class="tip-card__text">
-              Pets may find traveling stressful, so bring their familiar food,
-              medication, treats, carriers, leashes, bedding, and toys to make
-              them feel more safe and comfortable.
-            </p>
-          </div>
-          <div class="bonus-tip">
-            <img
-              class="bonus-tip__image"
-              src="images/bonus-tip@2x.png"
-              alt="bonus tip"
-            />
-            <p class="bonus-tip__text">
-              Offer them a little extra sooting support with our
-              veterinarian-formulated
-              <a href="#" class="link">Paw CBD Calming</a> products!
-            </p>
+          <div class="bonus-tip-desktop-container">
+            <div class="bonus-tip">
+              <img
+                class="bonus-tip__image"
+                src="images/bonus-tip@2x.png"
+                alt="bonus tip"
+              />
+              <p class="bonus-tip__text">
+                Offer them a little extra sooting support with our
+                veterinarian-formulated
+                <a href="#" class="link">Paw CBD Calming</a> products!
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -124,9 +166,37 @@
               melatonin, chamomile, passion flower, valerian root, and
               L-tryptophan combined with the powerful properties of CBD!
             </p>
+            <div class="hide-for-small-only">
+              <ul class="value-props">
+                <li class="value-props__item">
+                  + Manage signs of common daily stress
+                </li>
+                <li class="value-props__item">
+                  + Support a sense of calm during chaotic times
+                </li>
+                <li class="value-props__item">
+                  + Complement everyday wellness routine
+                </li>
+                <li class="value-props__item">
+                  + Veterinarian-formulated and free of THC*
+                </li>
+              </ul>
+              <p class="section__choice-text">
+                Choose one of two Calm Canine Bundles based on your <br />dog’s
+                size for best results.
+              </p>
+              <div class="button-with-text">
+                <a href="#" class="button">Calm canine bundle (m-l)</a>
+                <span>For dogs weighing over 50 lbs</span>
+              </div>
+              <div class="button-with-text">
+                <a href="#" class="button">Calm canine bundle (s-m)</a>
+                <span>For dogs weighing under 50 lbs</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container container--bundle">
+        <div class="container container--bundle show-for-small-only">
           <ul class="value-props">
             <li class="value-props__item">
               + Manage signs of common daily stress
@@ -167,8 +237,13 @@
         </div>
       </section>
       <section class="section section--reviews">
-        <div class="container">
+        <div class="container container--reviews">
           <h2 class="section__title">What our Customers are Saying</h2>
+          <img
+            class="section__image hide-for-small-only"
+            src="/images/dog-in-window.png"
+            alt="Dog in window"
+          />
           <div class="review-slider">
             <div class="review-card">
               <p class="review-card__quote">
@@ -179,38 +254,47 @@
             </div>
             <div class="review-card">
               <p class="review-card__quote">
-                “My dog enjoys the chews, and she seems calmer, more relaxed,
-                and carefree.”
+                “We have been using this product for over a year for our two
+                dogs! It has improved their ability to get up and move around.
+                We trust cbdMD and are really impressed with the quality of
+                their products and the fantastic customer service!”
               </p>
-              <span class="review-card__name">- Sam</span>
+              <span class="review-card__name">- Kendra</span>
             </div>
             <div class="review-card">
               <p class="review-card__quote">
-                “My dog enjoys the chews, and she seems calmer, more relaxed,
-                and carefree.”
+                “My dog is just as energetic as usual, but no more panicked
+                howling, and even getting along better with other dogs.”
               </p>
-              <span class="review-card__name">- Sam</span>
+              <span class="review-card__name">- Kerry</span>
             </div>
             <div class="review-card">
               <p class="review-card__quote">
-                “My dog enjoys the chews, and she seems calmer, more relaxed,
-                and carefree.”
+                “This is an amazing product! It has helped my dogs go from never
+                moving to acting like puppies again!”
               </p>
-              <span class="review-card__name">- Sam</span>
+              <span class="review-card__name">- Jolanda</span>
             </div>
             <div class="review-card">
               <p class="review-card__quote">
-                “My dog enjoys the chews, and she seems calmer, more relaxed,
-                and carefree.”
+                “I use it for my 92lb Golden and he is like a new dog!”
               </p>
-              <span class="review-card__name">- Sam</span>
+              <span class="review-card__name">- Meredith</span>
             </div>
             <div class="review-card">
               <p class="review-card__quote">
-                “My dog enjoys the chews, and she seems calmer, more relaxed,
-                and carefree.”
+                “I bought these products at my local health food store. They
+                have been a lifesaver for our dog and us. He calms right down
+                and is able to rest at night. I recommend it to all my friends!”
               </p>
-              <span class="review-card__name">- Sam</span>
+              <span class="review-card__name">- Golden Boys</span>
+            </div>
+            <div class="review-card">
+              <p class="review-card__quote">
+                “Not only do the chews help, but the flavor choices help keep it
+                fresh and enjoyable for them. Thank you SO much!”
+              </p>
+              <span class="review-card__name">- Wanda</span>
             </div>
           </div>
         </div>
@@ -218,6 +302,14 @@
     </main>
     <footer class="footer">
       <div class="container">
+        <div class="footer__form show-for-small-only">
+          <h2 class="footer__title">Get the Latest News &amp; Offers!</h2>
+          <input
+            class="footer__input"
+            type="text"
+            placeholder="Enter your Email"
+          /><button class="footer__submit">Submit</button>
+        </div>
         <div class="footer__lists-container">
           <ul class="footer__list">
             <li>
@@ -250,6 +342,14 @@
             <li><a href="#">ADA Compliance</a></li>
             <li><a href="#">Enable Accessibility Options</a></li>
           </ul>
+          <div class="footer__form hide-for-small-only">
+            <h2 class="footer__title">Get the Latest News &amp; Offers!</h2>
+            <input
+              class="footer__input"
+              type="text"
+              placeholder="Enter your Email"
+            /><button class="footer__submit">Submit</button>
+          </div>
           <ul class="footer__list social-links">
             <li>
               <h3 class="footer__list-title">Social</h3>
